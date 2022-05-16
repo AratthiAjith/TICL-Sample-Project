@@ -15,10 +15,10 @@ public class EmployeeServiceImpl implements IEmployeeService{
 	IEmployeeDao epdo;
 
 	@Override
-	public Integer addEmployee(Employee e) {
+	public String addEmployee(Employee e) {
 		// TODO Auto-generated method stub
 		epdo.save(e);
-		return e.getId();
+		return e.getEmployeeCode();
 	}
 
 	@Override

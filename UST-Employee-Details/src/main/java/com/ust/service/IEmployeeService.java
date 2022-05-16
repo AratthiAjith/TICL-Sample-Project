@@ -8,7 +8,7 @@ import com.ust.model.Employee;
 
 public interface IEmployeeService {
 	
-		public Integer addEmployee(Employee e);
+		public String addEmployee(Employee e);
 		public void updateEmployee(Employee e);
 		public boolean isPresent(int id);
 		public Optional<Employee> getEmployeeById(int d);

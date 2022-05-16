@@ -28,8 +28,8 @@ IEmployeeService emps;
 
 @PostMapping("/add")
 	public ResponseEntity<String> addEmployee(@RequestBody Employee emp){
-	int id=	emps.addEmployee(emp);
-	String msg= "Employee id" +id +"inserted successfully";
+	String code=	emps.addEmployee(emp);
+	String msg= "Employee id " +code +" inserted successfully";
 	return new ResponseEntity<String>(msg,HttpStatus.OK);
 	}
 	
